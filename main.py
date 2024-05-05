@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, send_file
+from extractors.wwr import extract_wwr_jobs
 
 # Flask 애플리케이션을 생성합니다.
 app = Flask("JobScraper")
@@ -11,12 +12,21 @@ def home():
     return render_template("home.html")
 
 
+db = {}
+
+
 @app.route("/search")
 def search():
     keyword = request.args.get("keyword")
     if keyword == None:
         return redirect("/")
-    return render_template("search.html", keyword=keyword)
+    if keyword in db:
+        jobs = db[keyword]
+    else:
+        wwr = extract_wwr_jobs(keyword)
+        jobs = wwr
+        db[keyword] = jobs
+    return render_template("search.html", keyword=keyword, jobs=jobs)
 
 
 # Flask 애플리케이션을 실행합니다.
