@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, send_file
 from extractors.wwr import extract_wwr_jobs
+from extractors.remote import extract_remote_jobs
 
 # Flask 애플리케이션을 생성합니다.
 app = Flask("JobScraper")
@@ -24,7 +25,8 @@ def search():
         jobs = db[keyword]
     else:
         wwr = extract_wwr_jobs(keyword)
-        jobs = wwr
+        remote = extract_remote_jobs(keyword)
+        jobs = wwr + remote
         db[keyword] = jobs
     return render_template("search.html", keyword=keyword, jobs=jobs)
 
