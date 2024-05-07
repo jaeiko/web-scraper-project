@@ -31,5 +31,5 @@ def search():
     return render_template("search.html", keyword=keyword, jobs=jobs)
 
 
-# Flask 애플리케이션을 실행합니다.
+# Flask 애플리케이션을 실행한다.
 app.run("0.0.0.0")
