@@ -13,6 +13,7 @@ def home():
     return render_template("home.html")
 
 
+# db 딕셔너리 추가(이미 이전에 검색한 결과를 또 리로드하지 않고 바로 db 딕셔너리에서 찾을 수 있게)
 db = {}
 
 
