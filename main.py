@@ -21,14 +21,18 @@ db = {}
 def search():
     keyword = request.args.get("keyword")
     if keyword == None:
+        # 키워드가 지정되지 않은 경우 홈 페이지로 리디렉션합니다.
         return redirect("/")
     if keyword in db:
+        # 이미 검색된 키워드의 결과가 있는 경우, 데이터베이스에서 결과를 가져옵니다.
         jobs = db[keyword]
     else:
+        # 새로운 키워드에 대한 검색을 실행하고 결과를 데이터베이스에 저장합니다.
         wwr = extract_wwr_jobs(keyword)
         remote = extract_remote_jobs(keyword)
         jobs = wwr + remote
         db[keyword] = jobs
+        # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
     return render_template("search.html", keyword=keyword, jobs=jobs)
 
 
