@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, send_file
 from extractors.wwr import extract_wwr_jobs
 from extractors.remote import extract_remote_jobs
+from file import save_to_file
 
 # Flask 애플리케이션을 생성합니다.
 app = Flask("JobScraper")
@@ -34,6 +35,17 @@ def search():
         db[keyword] = jobs
         # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
     return render_template("search.html", keyword=keyword, jobs=jobs)
+
+
+@app.route("/export")
+def export():
+    keyword = request.args.get("keyword")
+    if keyword == None:
+        return redirect("/")
+    if keyword not in db:
+        return redirect(f"/search?keyword={keyword}")
+    save_to_file(keyword, db[keyword])
+    return send_file(f"{keyword}.csv", as_attachment=True)
 
 
 # Flask 애플리케이션을 실행한다.
