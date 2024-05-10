@@ -17,6 +17,8 @@ def home():
 # db 딕셔너리 추가(이미 이전에 검색한 결과를 또 리로드하지 않고 바로 db 딕셔너리에서 찾을 수 있게)
 db = {}
 
+# 검색 페이지 라우터
+
 
 @app.route("/search")
 def search():
@@ -35,6 +37,8 @@ def search():
         db[keyword] = jobs
         # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
     return render_template("search.html", keyword=keyword, jobs=jobs)
+
+# 파일 추출 페이지 라우터
 
 
 @app.route("/export")
