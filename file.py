@@ -1,3 +1,4 @@
+# 출력 결과를 csv 파일로 저장하는 함수
 def save_to_file(file_name, jobs):
     file = open(f"{file_name}.csv", "w", encoding="utf-8-sig")
 
