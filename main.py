@@ -46,5 +46,5 @@ def export():
     return send_file(f"{keyword}.csv", as_attachment=True)
 
 
-# Flask 애플리케이션을 실행한다.
+# Flask 애플리케이션을 실행
 app.run("0.0.0.0")
