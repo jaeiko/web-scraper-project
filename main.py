@@ -3,13 +3,11 @@ from extractors.wwr import extract_wwr_jobs
 from extractors.remote import extract_remote_jobs
 from file import save_to_file
 
-# Flask 애플리케이션을 생성합니다.
+# Flask 애플리케이션을 생성
 app = Flask("JobScraper")
 
-# 홈 페이지를 위한 route를 정의합니다.
 
-
-@app.route("/")
+@app.route("/")  # 홈 페이지를 위한 route를 정의
 def home():
     return render_template("home.html")
 
@@ -17,10 +15,8 @@ def home():
 # db 딕셔너리 추가(이미 이전에 검색한 결과를 또 리로드하지 않고 바로 db 딕셔너리에서 찾을 수 있게)
 db = {}
 
-# 검색 페이지 라우터
 
-
-@app.route("/search")
+@app.route("/search")   # 검색 페이지 라우터
 def search():
     keyword = request.args.get("keyword")
     if keyword == None:
@@ -38,13 +34,11 @@ def search():
         # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
     return render_template("search.html", keyword=keyword, jobs=jobs)
 
-# 파일 추출 페이지 라우터
 
-
-@app.route("/export")
+@app.route("/export")   # 파일 추출 페이지 라우터
 def export():
     keyword = request.args.get("keyword")
-    if keyword == None:
+    if keyword == None:  # 해당 keyword가 비워져 있으면 다시 홈으로 리다이렉트
         return redirect("/")
     if keyword not in db:
         return redirect(f"/search?keyword={keyword}")
