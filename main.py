@@ -18,7 +18,7 @@ db = {}
 
 @app.route("/search")   # 검색 페이지 라우터
 def search():
-    keyword = request.args.get("keyword")
+    keyword = request.args.get("keyword")   # 키워드 입력 받음
     if keyword == None:
         # 키워드가 지정되지 않은 경우 홈 페이지로 리디렉션합니다.
         return redirect("/")
