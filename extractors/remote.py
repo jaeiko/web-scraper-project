@@ -11,6 +11,12 @@ def extract_remote_jobs(keyword):
     # HTTP GET 요청을 보내고 응답을 받음
     request = requests.get(base_url, headers={"User-Agent": "Juni"})
 
+    '''
+    User-Agent 헤더는 웹 서버에 요청을 보낸 클라이언트(사용자 에이전트)를 나타내는 문자열입니다. 
+    웹 서버는 User-Agent 헤더를 통해 어떤 브라우저나 클라이언트 소프트웨어가 요청을 보냈는지 식별할 수 있습니다.
+      "Juni"라는 문자열은 임의로 선택된 사용자 에이전트를 나타냅니다.
+    '''
+
     # HTTP 요청에 실패했을 경우
     if request.status_code != 200:
         print("Can't request website")
