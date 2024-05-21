@@ -17,7 +17,7 @@ def extract_remote_jobs(keyword):
       "Juni"라는 문자열은 임의로 선택된 사용자 에이전트를 나타냅니다.
     '''
 
-    # HTTP 요청에 실패했을 경우
+    # HTTP 요청에 실패했을 경우 에러 프린트
     if request.status_code != 200:
         print("Can't request website")
     else:   # HTTP 요청에 성공했을 경우
