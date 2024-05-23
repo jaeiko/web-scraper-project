@@ -23,7 +23,7 @@ def extract_remote_jobs(keyword):
     else:   # HTTP 요청에 성공했을 경우
         # 추출된 결과를 저장할 리스트 초기화
         results = []
-        # BeautifulSoup을 사용하여 HTML을 파싱
+        # BeautifulSoup을 사용하여 HTML을 파싱함.
         soup = BeautifulSoup(request.text, "html.parser")
         # 각 직업 정보가 포함된 테이블 행(tr) 요소를 찾음
         jobs = soup.find_all("tr", class_="job")
