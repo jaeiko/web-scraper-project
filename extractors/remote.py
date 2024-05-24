@@ -25,7 +25,7 @@ def extract_remote_jobs(keyword):
         results = []
         # BeautifulSoup을 사용하여 HTML을 파싱함.
         soup = BeautifulSoup(request.text, "html.parser")
-        # 각 직업 정보가 포함된 테이블 행(tr) 요소를 찾음
+        # 각 직업 정보가 포함된 테이블 행(tr) 요소를 찾는다.
         jobs = soup.find_all("tr", class_="job")
         # 각 직업 정보에 대해 반복
         for job in jobs:
