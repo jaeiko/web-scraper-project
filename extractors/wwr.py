@@ -38,7 +38,7 @@ def extract_wwr_jobs(keyword):
                     'link': f"https://weworkremotely.com/{link}",
                     'company': company.string.replace(",", " "),
                     'location': region.string.replace(",", " "),
-                    'position': title.string.replace(",", " ")
+                    'title': title.string.replace(",", " ")
                 }
                 # 결과 리스트에 딕셔너리 추가
                 results.append(job_data)

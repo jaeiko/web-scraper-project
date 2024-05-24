@@ -22,20 +22,28 @@
         <table role="grid">
           <thead>
             <tr>
-              <th>직종</th>
-              <th>회사</th>
-              <th>위치</th>
-              <th>링크</th>
+              <th>Title</th>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Link</th>
             </tr>
           </thead>
           <tbody>
             {% for job in jobs %}
             <tr>
-              <td>{{job.position}}</td>
+              <td><strong>{{job.title}}</strong></td>
               <td>{{job.company}}</td>
               <td>{{job.location}}</td>
               <td>
-                <a href="{{job.link}}" target="_blank">지원하기 &rarr;</a>
+                <a
+                  href="{{job.link}}"
+                  role="button"
+                  class="contrast outline"
+                  target="_blank"
+                  data-tooltip="Apply Now!"
+                  data-placement="right"
+                  >Apply&rarr;</a
+                >
               </td>
             </tr>
             {% endfor %}

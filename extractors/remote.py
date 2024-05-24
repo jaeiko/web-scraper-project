@@ -50,7 +50,7 @@ def extract_remote_jobs(keyword):
                 job_data = {
                     'link': f"https://remoteok.com{link['href']}",
                     'company': company,
-                    'position': position,
+                    'title': position,
                     'location': location
                 }
                 # 결과 리스트에 딕셔너리 추가

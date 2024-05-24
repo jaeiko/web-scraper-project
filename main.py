@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, send_file
 from extractors.wwr import extract_wwr_jobs
 from extractors.remote import extract_remote_jobs
+from extractors.saramin import extract_saramin_jobs
 from file import save_to_file
 
 # Flask 애플리케이션을 생성
@@ -29,7 +30,8 @@ def search():
         # 새로운 키워드에 대한 검색을 실행하고 결과를 데이터베이스에 저장합니다.
         wwr = extract_wwr_jobs(keyword)
         remote = extract_remote_jobs(keyword)
-        jobs = wwr + remote
+        saramin = extract_saramin_jobs(keyword)
+        jobs = wwr + remote + saramin
         db[keyword] = jobs
         # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
     return render_template("search.html", keyword=keyword, jobs=jobs)
