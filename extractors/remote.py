@@ -35,8 +35,10 @@ def extract_remote_jobs(keyword):
             company = job.find("h3", itemprop="name")
             # 직무 제목을 추출
             position = job.find("h2", itemprop="title")
-            # 위치(지역) 정보를 추출
-            location = job.find("div", class_="location")
+            # 위치(지역), 월급 정보를 추출
+            locations = job.find_all("div", class_="location")
+            location = locations[0]
+            salary = locations[-1]
             # 추출한 정보를 다듬으면서 공백을 제거하고 문자열로 변환
             if company:
                 company = company.string.strip()
@@ -44,6 +46,8 @@ def extract_remote_jobs(keyword):
                 position = position.string.strip()
             if location:
                 location = location.string.strip()
+            if salary:
+                salary = salary.string.strip()
             # 회사 이름, 직무 제목, 위치 정보가 모두 존재할 경우
             if company and position and location:
                 # 추출한 정보를 딕셔너리 형태로 저장
@@ -51,7 +55,8 @@ def extract_remote_jobs(keyword):
                     'link': f"https://remoteok.com{link['href']}",
                     'company': company,
                     'title': position,
-                    'location': location
+                    'location': location,
+                    'note': salary,
                 }
                 # 결과 리스트에 딕셔너리 추가
                 results.append(job_data)
