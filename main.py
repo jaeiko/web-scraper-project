@@ -34,7 +34,7 @@ def search():
         jobs = wwr + remote + saramin
         db[keyword] = jobs
         # 검색 결과를 템플릿으로 렌더링하여 사용자에게 표시합니다.
-    return render_template("search.html", keyword=keyword, jobs=jobs)
+    return render_template("search.html", keyword=keyword, wwr=wwr, remote=remote, saramin=saramin, jobs=jobs)
 
 
 @app.route("/export")   # 파일 추출 페이지 라우터

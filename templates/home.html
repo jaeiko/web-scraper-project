@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,13 @@
         <h4>어떤 직업을 원하시나요?</h4>
         <form action="/search">
         <input type="text" name="keyword" placeholder="여기에 입력해주세요 :)" />
+        <label for="terms">
+          <input required type="checkbox" id="terms" name="terms" />
+          <strong>I agree to the Terms and Conditions:</strong>
+          <small>
+            이 스크래퍼는 오직 교육용입니다. 악의적으로 사용하지 마십시요.
+          </small>
+        </label>
         <button>Search!</button>
     </main>
     </form>
