@@ -12,6 +12,16 @@ app = Flask("JobScraper")
 def home():
     return render_template("home.html")
 
+# 500 에러 핸들러
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    # 사용자에게 표시할 메시지
+    error_message = "죄송합니다. 서버에서 오류가 발생했습니다. 문제가 지속되면 관리자에게 문의해주세요."
+    # 오류 페이지에 렌더링할 템플릿 또는 메시지 반환
+    return render_template("error.html", error_message=error_message), 500
+
 
 # db 딕셔너리 추가(이미 이전에 검색한 결과를 또 리로드하지 않고 바로 db 딕셔너리에서 찾을 수 있게)
 db = {}
