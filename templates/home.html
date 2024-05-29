@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/favicon.ico" />
     <title>직업 채용 정보 검색 사이트</title>
     <link
@@ -10,48 +10,60 @@
       href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
     />
     <style>
-        .search-container {
-            display: flex;
-            align-items: center;
-        }
-        .search-container input[type="text"] {
-            flex-grow: 1;
-            padding: 0.5rem;
-            box-sizing: border-box;
-            height: 40px; 
-        }
-        .search-container button {
-            margin-left: 10px;
-            padding: 0.5rem 1rem;
-            box-sizing: border-box;
-            height: 40px; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: -18px; 
-        }
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+      .search-container input[type="text"] {
+        flex-grow: 1;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        height: 40px;
+      }
+      .search-container button {
+        margin-left: 10px;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -18px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1 style = "text-align : center; padding : 50px;">직업 채용 검색</h1>
-        <h4 style = "padding : 10px;">어떤 직업을 원하시나요?</h4>
-        <form action="/search">
-            <div style = "padding : 10px;" class="search-container">
-                <input type="text" name="keyword" placeholder="여기에 입력해주세요 :)" />
-                <button>Search!</button>
-            </div>
-            <label style = "padding : 10px;" for="terms">
-              <input style = "padding : 10px;"required type="checkbox" id="terms" name="terms" />
-              <strong style = "padding : 10px;">I agree to the Terms and Conditions:</strong>
-              <small>
-                이 스크래퍼는 오직 교육용입니다. 악의적으로 사용하지 마십시요.
-              </small>
-            </label>
-            <div class="center" style="text-align : center;">
-              <img src="teamlogo.jpg" alt="Team Logo" width="15%">
-            </div>
-        </form>
+      <h1 style="text-align: center; padding: 50px">직업 채용 검색</h1>
+      <h4 style="padding: 10px">어떤 직업을 원하시나요?</h4>
+      <form action="/search">
+        <div style="padding: 10px" class="search-container">
+          <input
+            type="text"
+            name="keyword"
+            placeholder="여기에 입력해주세요 :)"
+          />
+          <button>Search!</button>
+        </div>
+        <label style="padding: 10px" for="terms">
+          <input
+            style="padding: 10px"
+            required
+            type="checkbox"
+            id="terms"
+            name="terms"
+          />
+          <strong style="padding: 10px"
+            >I agree to the Terms and Conditions:</strong
+          >
+          <small>
+            이 스크래퍼는 오직 교육용입니다. 악의적으로 사용하지 마십시요.
+          </small>
+        </label>
+        <div class="center" style="text-align: center">
+          <img src="teamlogo.jpg" alt="Team Logo" width="15%" />
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>
