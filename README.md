@@ -15,4 +15,4 @@ HUFS 2024-1 오픈소스SW 프로젝트
 오늘 하루 커밋 완료
 
 # 직업 채용 검색 웹사이트
-![alt text](image-1.png)
+![searchimg](image.png)
