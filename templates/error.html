@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="text-align: center">Error - No Results Found</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+      <div>
+        <img
+        src="{{ url_for('static', filename='img/errorimg.jpg') }}"
+        alt -"Error" width="40%" />
+      </div>
+      <h1>검색 결과가 없습니다</h1>
+      <p>죄송합니다. 검색 결과가 없습니다.</p>
+      <a href="/" class="btn">홈으로 돌아가기</a>
+    </div>
+  </body>
+</html>
