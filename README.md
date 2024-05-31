@@ -1,7 +1,7 @@
 ## 직업 채용 검색 웹사이트
   //job search 사진 삽입
   <img src="![searchimg (1)](https://github.com/jaeiko/web-scraper-project/assets/162958493/14d29430-342e-43bb-8d1d-b4a86e5109e0)
-" width="200" height="400"/>
+" width="300" height="300"/>
 
 ## 프로젝트 소개   
 - 직업 관련 채용 공고를 정리해서 한눈에 보이는 사이트
