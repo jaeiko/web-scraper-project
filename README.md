@@ -9,11 +9,6 @@
 <img src="![구현모습2](https://github.com/jaeiko/web-scraper-project/assets/162958493/490837f3-2787-464e-a733-6ea0eb46627e)
 " width="350" height="200"/>
 
-//구현된 사진
-
-위 링크을 클릭하면 웹페이지를 구현한 모습을 보실 수 있습니다.
-
-
 ## 프로젝트 기획의도
 - 한국 직업 웹사이트인 Remoteok, saramin, Weworkmotely에서 채용 정보 추출
 - FLASK, beautiful soup, css를 사용하여 정보뿐만이 아닌 시각적 디자인 또한 고려
