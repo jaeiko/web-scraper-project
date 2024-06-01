@@ -47,10 +47,10 @@
 
 
 ## :question:프로젝트 사용법 (Getting Started)
-'''
+```
 export FLASK_APP=main.py 
 flask run
-'''
+```
 
 ## :raising_hand:팀 정보 (Team Information)
 
