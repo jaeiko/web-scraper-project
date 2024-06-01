@@ -7,9 +7,10 @@
 <br/>![resultimg1](https://github.com/jaeiko/web-scraper-project/assets/162958493/c01d09a4-9297-47f7-886d-13d578797432)
 
 ## :bookmark_tabs:Job Search 기획의도
-- 손쉬운 채용 정보 수집을 위한 주요 기능 구현
-- 한국 직업 웹사이트인 Remoteok, saramin, Weworkmotely에서 채용 정보 추출
-- FLASK, beautiful soup, css를 사용하여 정보뿐만이 아닌 시각적 디자인 또한 고려
+- 취업 준비생을 위해 손쉬운 채용 정보를 한 곳에 모아 출력해주는 웹 사이트를 기획
+- 검색 후 관심이 있는 기업이 생기면 해당 링크를 걸어서 접근하도록 구현
+- 추출 후 검색 기록 저장을 위해 파일 다운로드 기능 구현
+- 직업 웹사이트인 Remoteok, saramin, Weworkmotely에서 채용 정보 추출
 
 
 
@@ -30,7 +31,7 @@
     <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/51fd9b5e-5d81-4899-9b57-2123ffc86895" width = 400px height = 270px></td>
    </tr> 
    <tr>
-      <td align="center">링크</td>ㅋ
+      <td align="center">링크</td>
       <td align="center">연봉이나 조건</td>
   </tr>
 </table>
@@ -46,8 +47,10 @@
 
 
 ## :question:프로젝트 사용법 (Getting Started)
-
-
+'''
+export FLASK_APP=main.py 
+flask run
+'''
 
 ## :raising_hand:팀 정보 (Team Information)
 
