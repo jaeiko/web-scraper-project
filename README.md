@@ -17,7 +17,7 @@
 <table>
   <tr>
     <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/d2b30bea-a9ab-4d9c-b0a6-9b47beb15d3b"  width = 400px height = 270px ></td>
-    <td><img src="hhttps://github.com/jaeiko/web-scraper-project/assets/162958493/356d765a-c918-4d09-aadd-80f6751f6cb2" width = 400px height = 270px></td>
+    <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/356d765a-c918-4d09-aadd-80f6751f6cb2" width = 400px height = 270px></td>
    </tr> 
    <tr>
       <td align="center">회사</td>
@@ -30,7 +30,7 @@
     <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/51fd9b5e-5d81-4899-9b57-2123ffc86895" width = 400px height = 270px></td>
    </tr> 
    <tr>
-      <td align="center">링크</td>
+      <td align="center">링크</td>ㅋ
       <td align="center">연봉이나 조건</td>
   </tr>
 </table>
