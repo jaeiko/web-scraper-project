@@ -16,8 +16,8 @@
 ## :mag_right:주요 제공 기능
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/13505734/198883106-ceee89c2-85ae-4fa6-bc08-b072544d541a.png"  width = 400px height = 270px ></td>
-    <td><img src="https://user-images.githubusercontent.com/13505734/198883271-7147a1e0-4218-450a-87e7-e5e7d6a73413.png" width = 400px height = 270px></td>
+    <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/d2b30bea-a9ab-4d9c-b0a6-9b47beb15d3b"  width = 400px height = 270px ></td>
+    <td><img src="hhttps://github.com/jaeiko/web-scraper-project/assets/162958493/356d765a-c918-4d09-aadd-80f6751f6cb2" width = 400px height = 270px></td>
    </tr> 
    <tr>
       <td align="center">회사</td>
@@ -26,15 +26,15 @@
 </table>
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/13505734/198883553-d52852ba-8a3e-43fc-83a0-035224959748.png" width = 400px height = 270px ></td>
-    <td><img src="https://user-images.githubusercontent.com/13505734/198883624-00198da0-e3ac-4583-be75-5b754e16dcbb.png" width = 400px height = 270px></td>
+    <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/fdf560c8-b432-4598-8778-0e71387fb33a" width = 400px height = 270px ></td>
+    <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/51fd9b5e-5d81-4899-9b57-2123ffc86895" width = 400px height = 270px></td>
    </tr> 
    <tr>
       <td align="center">링크</td>
       <td align="center">연봉이나 조건</td>
   </tr>
 </table>
-- 상단에 Home과 Job Websites 메뉴를 만들어서 링크를 걸어 사용자가 편리하게 이용하도록 구성
+* 상단에 Home과 Job Websites 메뉴를 만들어서 링크를 걸어 사용자가 편리하게 이용하도록 구성
 
 
 ## :hammer:기술 스택(Technique Used)
