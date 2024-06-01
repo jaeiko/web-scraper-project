@@ -1,13 +1,10 @@
 ## Job Search(직업 채용 검색 웹사이트)
-  <img src="![searchimg](https://github.com/jaeiko/web-scraper-project/assets/162958493/14d29430-342e-43bb-8d1d-b4a86e5109e0)
-" width="300" height="300"/>
+  ![searchimg](https://github.com/jaeiko/web-scraper-project/assets/162958493/14d29430-342e-43bb-8d1d-b4a86e5109e0){: width="300" height="300"}
 
 ## 프로젝트 소개   
 - 직업 관련 채용 공고를 정리해서 한눈에 보이는 사이트
-<br/><img src="![구현모습1](https://github.com/jaeiko/web-scraper-project/assets/162958493/c01d09a4-9297-47f7-886d-13d578797432)
-" width="350" height="200"/>
-<img src="![구현모습2](https://github.com/jaeiko/web-scraper-project/assets/162958493/490837f3-2787-464e-a733-6ea0eb46627e)
-" width="350" height="200"/>
+<br/>![resultimg1](https://github.com/jaeiko/web-scraper-project/assets/162958493/c01d09a4-9297-47f7-886d-13d578797432){: width="350" height="200"}
+![resultimg2](https://github.com/jaeiko/web-scraper-project/assets/162958493/490837f3-2787-464e-a733-6ea0eb46627e){: width="350" height="200"}
 
 ## 프로젝트 기획의도
 - 한국 직업 웹사이트인 Remoteok, saramin, Weworkmotely에서 채용 정보 추출
