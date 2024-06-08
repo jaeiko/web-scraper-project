@@ -38,7 +38,7 @@
 * 상단에 Home과 Job Websites 메뉴를 만들어서 링크를 걸어 사용자가 편리하게 이용하도록 구성
 
 
-## 기술 스택(Technique Used)
+## :hammer:기술 스택(Technique Used)
 * <img alt="Flask" src ="https://img.shields.io/badge/Flask-000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 * ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white)
