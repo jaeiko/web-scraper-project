@@ -22,7 +22,7 @@
    </tr> 
    <tr>
       <td align="center">Company</td>
-      <td align="center">위치</td>
+      <td align="center">Location</td>
   </tr>
 </table>
 <table>
