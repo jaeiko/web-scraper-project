@@ -21,7 +21,7 @@
     <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/356d765a-c918-4d09-aadd-80f6751f6cb2" width = 400px height = 270px></td>
    </tr> 
    <tr>
-      <td align="center">Company</td>
+      <td align="center">회사</td>
       <td align="center">Location</td>
   </tr>
 </table>
