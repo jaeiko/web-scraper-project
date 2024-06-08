@@ -31,7 +31,7 @@
     <td><img src="https://github.com/jaeiko/web-scraper-project/assets/162958493/51fd9b5e-5d81-4899-9b57-2123ffc86895" width = 400px height = 270px></td>
    </tr> 
    <tr>
-      <td align="center">링크</td>
+      <td align="center">Link</td>
       <td align="center">연봉이나 조건</td>
   </tr>
 </table>
