@@ -32,7 +32,7 @@
    </tr> 
    <tr>
       <td align="center">Link</td>
-      <td align="center">연봉이나 조건</td>
+      <td align="center">Salary or Condition</td>
   </tr>
 </table>
 * 상단에 Home과 Job Websites 메뉴를 만들어서 링크를 걸어 사용자가 편리하게 이용하도록 구성
